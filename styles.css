@@ -1,0 +1,53 @@
+.title {
+    text-align: center;
+}
+
+.regular_format{
+    width: 50%;
+    margin: 0 auto;
+}
+
+body, html {
+    height: 100%;
+    margin: 0%;
+  }
+  
+.home {
+    background-image: url('oil_rig.jpeg');
+    height: 100%;
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+form { 
+    width: 400px;
+    right: 115px;
+    top: 170px;
+    position: absolute;
+    text-align: left;
+}
+
+table {
+    width: 400px;
+    left: 55%;
+    top: 370px;
+    position: absolute;
+    text-align: left;
+}
+
+input[type=text], 
+    input[type=password] { 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+
+button:hover { 
+    opacity: 0.7; 
+} 

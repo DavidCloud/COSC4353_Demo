@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fuel Quote</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-color: ghostwhite;">
+
+        <img class="home" src="oil_rig.jpeg">
+
+        <main>
+            <form onsubmit="return true" oninput= "price.value = Math.round((gallons.value * 1.8) * 100) / 100;">
+                <h1>Fuel Supply Inc.</h1>
+                <h3>Fuel Quote Form</h3>
+
+                <label for="gallons"><b>Gallons Requested</b></label>
+                <input class="u-full-width" placeholder="How many gallons do you want?" type="number" id="gallons" name="gallons" minlength= "3" maxlength="50" required>
+
+                <label for="addr1"><b> Delivery Address</b></label>
+                <input class="u-full-width" placeholder="Enter Address 1 (required)" type="text" id="addr1" name="addr1" maxlength="100" required>
+                <input class="u-full-width" placeholder="Enter Address 2 (optional)" type="text" id="addr2" name="addr2" maxlength="100">
+                <input class="u-full-width" placeholder="Enter City (required)" type="text" id="city" name="city" maxlength="50" required>
+                <label for="state"><b>State</b></label>
+                
+                <select name="state" id="state">
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AZ">AZ</option>
+                    <option value="AR">AR</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DE">DE</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="IA">IA</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="ME">ME</option>
+                    <option value="MD">MD</option>
+                    <option value="MA">MA</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MS">MS</option>
+                    <option value="MO">MO</option>
+                    <option value="MT">MT</option>
+                    <option value="NE">NE</option>
+                    <option value="NV">NV</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NY">NY</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VT">VT</option>
+                    <option value="VA">VA</option>
+                    <option value="WA">WA</option>
+                    <option value="WV">WV</option>
+                    <option value="WI">WI</option>
+                    <option value="WY">WY</option>
+                </select>
+
+                <label for="zipcode"><b>Zipcode</b></label>
+                <input class="u-full-width" placeholder="Enter zipcode (required)" type="text" id="zipcode" name="zipcode" minlength="5" maxlength="9" required>
+
+                <label for="calendar"><b>Delivery Date</b></label>
+                <input type="date" id="delvDate" name="delvDate" value="2020-06-19" min="2020-06-19" required>
+
+                <label for="ppg"><b>Suggested Price/Gallon</b></label>
+                <output name="price per gallon" id="price per gallon">$1.80 per gallon</output>
+
+                <div>
+                </div>
+                <button type="submit" class="button-primary">Submit</button>
+                <label for="total"><b>Total Amount Due</b></label>
+                $<output name="price" id="price">
+            </form>
+        </main>
+        <script src="fuel_quote.js"></script>
+    </body>
+</html>

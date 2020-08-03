@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "nyc --reportker=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "keywords": [],
+  "author": "Stephen Mackey, David Cloud, Travis Bostick",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0"
+  }
+}
