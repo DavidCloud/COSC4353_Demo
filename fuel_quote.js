@@ -42,6 +42,12 @@ class priceModule {
     }
 
     calcQuote(galRequest, price) {
+        //LocationF 2% TX, 4% out of state
+        //RateHistF 1% requested before, 0% no history
+        //GallRequestF 2% if more than 1000 gals, 3% if less than
+        companyProfitF = .1;
+        currentPrice = 1.5
+        margin = currentPrice * (LocationF - RateHistF + GallRequestF + companyProfitF)
         quote = galRequest * price;
         return quote
     }
