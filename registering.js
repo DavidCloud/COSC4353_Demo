@@ -31,4 +31,6 @@ form.addEventListener('submit', (event) =>
     });
     //after this we will access the database and put this information into 
     //the correct user information to complete the profile information
+    
+    location.replace("menu_page.html");
 });
